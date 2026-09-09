@@ -242,15 +242,13 @@ export const LabKidsSalesPage: React.FC<LabKidsSalesPageProps> = ({
 
         {/* 🎬 VSL Video Player Container */}
         <div className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-purple-400 bg-slate-950 aspect-video group">
-          <video
-            src="/labkids/vsl.mp4"
-            poster="/labkids/branding/capa_pc.webp"
-            controls
-            playsInline
-            className="w-full h-full object-contain"
-          >
-            Seu navegador não suporta a tag de vídeo.
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/9PexLzRMvXw?autoplay=1&rel=0"
+            title="Lab Kids VSL"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
 
         {/* Primary CTA Button */}

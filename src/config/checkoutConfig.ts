@@ -295,7 +295,7 @@ export const CHECKOUT_PLANS_CONFIG: Record<string, PlanConfig> = {
         installmentPrice: '€ 11.90',
       },
     },
-    hotmartCheckoutUrl: '',
+    hotmartCheckoutUrl: 'https://pay.hotmart.com/H107394610R',
     stripeCheckoutUrl: '',
     asaasPaymentLink: '',
     features: [
@@ -333,7 +333,7 @@ export const CHECKOUT_PLANS_CONFIG: Record<string, PlanConfig> = {
         installmentPrice: '€ 17.90',
       },
     },
-    hotmartCheckoutUrl: '',
+    hotmartCheckoutUrl: 'https://pay.hotmart.com/H107394610R',
     stripeCheckoutUrl: '',
     asaasPaymentLink: '',
     features: [

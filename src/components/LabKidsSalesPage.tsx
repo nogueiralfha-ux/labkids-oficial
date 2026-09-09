@@ -242,13 +242,15 @@ export const LabKidsSalesPage: React.FC<LabKidsSalesPageProps> = ({
 
         {/* 🎬 VSL Video Player Container */}
         <div className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-purple-400 bg-slate-950 aspect-video group">
-          <iframe
-            src="https://www.youtube.com/embed/9PexLzRMvXw?autoplay=1&rel=0"
-            title="Lab Kids VSL"
-            className="w-full h-full"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            src="/labkids/vsl.mp4"
+            poster="/labkids/branding/capa_pc.webp"
+            controls
+            playsInline
+            className="w-full h-full object-contain"
+          >
+            Seu navegador não suporta a tag de vídeo.
+          </video>
         </div>
 
         {/* Primary CTA Button */}
@@ -478,15 +480,13 @@ export const LabKidsSalesPage: React.FC<LabKidsSalesPageProps> = ({
 
           {/* Vídeo de Testemunho */}
           <div className="max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white/50 bg-slate-900 aspect-video ring-4 ring-purple-100">
-            <video
-              src="/labkids/testemunho.mp4"
-              poster="/labkids/branding/mockup.webp"
-              controls
-              playsInline
-              className="w-full h-full object-contain"
-            >
-              Seu navegador não suporta a tag de vídeo.
-            </video>
+            <iframe
+              src="https://www.youtube.com/embed/9PexLzRMvXw?rel=0"
+              title="Lab Kids Testimonial"
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

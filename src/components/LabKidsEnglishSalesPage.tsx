@@ -197,13 +197,15 @@ export const LabKidsEnglishSalesPage: React.FC<LabKidsEnglishSalesPageProps> = (
 
         {/* 🎬 VSL Video Player Container (English Intro Video) */}
         <div className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-purple-400 bg-slate-950 aspect-video group">
-          <iframe
-            src="https://www.youtube.com/embed/cWQeIddchG0?autoplay=1&rel=0"
-            title="Lab Kids VSL - English"
-            className="w-full h-full"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            src="/labkids-en/vsl.mp4"
+            poster="/labkids-en/branding/Arte 1 labkids ingles.webp"
+            controls
+            playsInline
+            className="w-full h-full object-contain"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         {/* Primary CTA Button */}
@@ -422,6 +424,17 @@ export const LabKidsEnglishSalesPage: React.FC<LabKidsEnglishSalesPageProps> = (
             <p className="text-slate-600 text-sm sm:text-base">
               Real families replacing mindless videos with wholesome science:
             </p>
+          </div>
+
+          {/* Testimonial Video */}
+          <div className="max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white/50 bg-slate-900 aspect-video ring-4 ring-purple-100">
+            <iframe
+              src="https://www.youtube.com/embed/cWQeIddchG0?rel=0"
+              title="Lab Kids Testimonial - English"
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

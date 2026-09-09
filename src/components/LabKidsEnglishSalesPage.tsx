@@ -197,15 +197,13 @@ export const LabKidsEnglishSalesPage: React.FC<LabKidsEnglishSalesPageProps> = (
 
         {/* 🎬 VSL Video Player Container (English Intro Video) */}
         <div className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-purple-400 bg-slate-950 aspect-video group">
-          <video
-            src="/labkids-en/vsl.mp4"
-            poster="/labkids-en/branding/Arte 1 labkids ingles.webp"
-            controls
-            playsInline
-            className="w-full h-full object-contain"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/cWQeIddchG0?autoplay=1&rel=0"
+            title="Lab Kids VSL - English"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
 
         {/* Primary CTA Button */}
